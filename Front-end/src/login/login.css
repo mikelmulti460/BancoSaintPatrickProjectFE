@@ -1,0 +1,84 @@
+:root{
+  --color-theme: rgb(145, 145, 145);
+}
+
+.img{float: left;}
+
+.cardlogin {
+
+  margin-top: 10px;
+}
+
+.list-container{
+  margin: 0px auto;
+  width: 400px;
+  border: 2px solid;
+  border-color: var(--color-theme);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-container .lists{display: flex;}
+.list-container .lists li{list-style: none;}
+.list-container .lists li a{
+    width: 200;
+    text-decoration: none;
+    margin: 0px 50px;
+    padding:9px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.list-container .lists li a.tipo-ingr{
+    text-align: center;
+    border: 2px solid;
+    color: var(--color-theme);
+}
+
+.list-container .lists li a:hover{
+    background: var(--color-theme);
+    color: rgb(0, 0, 0);
+}
+
+.formulario{
+
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+label{
+  color: var(--color-theme);
+}
+
+input{
+  height: 30px;
+  width: 400px;
+  border: 2px solid;
+  border-radius: 10px;
+  color: var(--color-theme);
+  margin-bottom: 1rem;
+}
+
+.btn-acceder{
+  height: 30px;
+  width: 400px;
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: var(--color-theme);
+  color:aliceblue;
+  height: 40px;
+}
+
+.recuperar{
+  display: flex;
+  justify-content: right;
+  margin-bottom: 1rem;
+}
+a{
+  text-decoration: none;
+  color: var(--color-theme);
+}
