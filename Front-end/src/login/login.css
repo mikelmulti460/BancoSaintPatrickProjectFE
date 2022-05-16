@@ -2,11 +2,12 @@
   --color-theme: rgb(145, 145, 145);
 }
 
-.img{float: left;}
+.img{
+  float: left;
+}
 
 .cardlogin {
-
-  margin-top: 10px;
+  transform: translateY(50%);
 }
 
 .list-container{
@@ -24,17 +25,21 @@
 .list-container .lists li a{
     width: 200;
     text-decoration: none;
-    margin: 0px 50px;
+    margin-right: 0px;
+    margin-left: 0px;
     padding:9px;
     border-radius: 10px;
     transition: 0.3s;
     font-size: 14px;
 }
 
-.list-container .lists li a.tipo-ingr{
+.list-container .lists li{
     text-align: center;
     border: 2px solid;
     color: var(--color-theme);
+    width: 47.5%;
+    margin-left: 1%;
+    border-radius: 10px;
 }
 
 .list-container .lists li a:hover{
@@ -82,3 +87,43 @@ a{
   text-decoration: none;
   color: var(--color-theme);
 }
+.division{
+  width: 50%;
+  float: left;
+}
+.img.division img{
+  width: 100%;
+  flex:1;
+}
+
+.img.division{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.cardlogin.division .lists{
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.cardlogin.division a{
+  display: block;
+}
+
+.list-container .lists li a:hover{
+  border-radius: 8px;
+}
+.cardlogin.division .list-container, #CardNumber, #Pin, .btn-acceder{
+height: 48.67px;
+}
+.btn-acceder{
+padding-top: 17.33px;
+padding-bottom: 31.34px;
+}
+

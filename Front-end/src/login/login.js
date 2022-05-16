@@ -61,26 +61,26 @@ const Login =() => {
     </section>):
     (
     <div className="general">
-      <div className="img">
+      <div className="img division">
         <img src={frame}/>
       </div>
-    <div className="cardlogin">
-      <div className="list-container">
-        <ul className="lists">
-          <li><a href="#" className="tipo-ingr">Personal</a></li>
-          <li><a href="#" className="tipo-ingr">Empresarial</a></li>
-        </ul>
+      <div className="cardlogin division">
+        <div className="list-container">
+          <ul className="lists">
+            <li><a href="#" className="tipo-ingr">Personal</a></li>
+            <li><a href="#" className="tipo-ingr">Empresarial</a></li>
+          </ul>
+        </div>
+        <div className="formulario" onSubmit={handleSubmit}>
+        <form>
+            <div><label>Numero de tarjeta</label></div>
+            <input type="text" id="CardNumber" ref={userRef} autoComplete="off" onChange={(e) => setCard(e.target.value)} value={CardNumber} />
+            <div><label>Password</label></div>
+            <input type="password" id="Pin" onChange={(e) => setPin(e.target.value)} value={Pin} />
+            <div className="recuperar"><a href="#">¿Olvidaste tu contraseña?</a></div>
+            <button className="btn-acceder">Acceder</button>
+        </form>
       </div>
-      <div className="formulario" onSubmit={handleSubmit}>
-      <form>
-          <div><label>Numero de tarjeta</label></div>
-          <input type="text" id="CardNumber" ref={userRef} autoComplete="off" onChange={(e) => setCard(e.target.value)} value={CardNumber} />
-          <div><label>Password</label></div>
-          <input type="password" id="Pin" onChange={(e) => setPin(e.target.value)} value={Pin} />
-          <div className="recuperar"><a href="#">¿Olvidaste tu contraseña?</a></div>
-          <button className="btn-acceder">Acceder</button>
-      </form>
-    </div>
     </div>
     </div>
     )}
