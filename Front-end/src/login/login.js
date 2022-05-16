@@ -2,6 +2,8 @@ import './login.css';
 import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from './AuthProvider';
 import frame from '../img/frame1.png';
+import { ReactComponent as Account } from '../img/account.svg';
+import { ReactComponent as Account_1 } from '../img/account_1.svg';
 import axios from './axios';
 
 const LOGIN_URL='api/v1/auth';
@@ -67,8 +69,20 @@ const Login =() => {
       <div className="cardlogin division">
         <div className="list-container">
           <ul className="lists">
-            <li><a href="#" className="tipo-ingr">Personal</a></li>
-            <li><a href="#" className="tipo-ingr">Empresarial</a></li>
+            <li>
+              <a href="#" className="tipo-ingr">
+              
+                  <Account /><span className="botonCardLogin">Personal</span>
+               
+              </a>
+            </li>
+            <li>
+              <a href="#" className="tipo-ingr">
+                
+                  <Account_1 /><span className="botonCardLogin">Empresarial</span>
+                
+              </a>
+            </li>
           </ul>
         </div>
         <div className="formulario" onSubmit={handleSubmit}>

@@ -21,16 +21,21 @@
   align-items: center;
 }
 .list-container .lists{display: flex;}
-.list-container .lists li{list-style: none;}
+.list-container .lists li{
+  list-style: none;
+}
 .list-container .lists li a{
     width: 200;
     text-decoration: none;
     margin-right: 0px;
     margin-left: 0px;
-    padding:9px;
+    padding:4px;
     border-radius: 10px;
     transition: 0.3s;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .list-container .lists li{
@@ -126,4 +131,3 @@ height: 48.67px;
 padding-top: 17.33px;
 padding-bottom: 31.34px;
 }
-
