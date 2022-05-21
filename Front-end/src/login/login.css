@@ -190,3 +190,15 @@ left: 5px;
 .btn-acceder:hover + .sombra{
   background: #EFF3FC;
   }
+
+  @media only screen and (max-width: 880px) {
+    .img.division {
+      display: none;
+    }
+    .formulario{
+    display: inherit;
+    }
+    .list-container{
+      margin: inherit;
+    }
+  }
