@@ -18,7 +18,7 @@
 .list-container {
   margin: 0px auto;
   width: 400px;
-  border: 2px solid;
+  border: none;
   border-color: var(--color-theme);
   border-radius: 10px;
   display: flex;
@@ -78,7 +78,7 @@ label {
 input {
   height: 30px;
   width: 400px;
-  border: 2px solid;
+  border: none;
   border-radius: 10px;
   color: var(--color-theme);
   margin-bottom: 1rem;
@@ -157,7 +157,6 @@ a {
 .btn-acceder:hover {
   background: #ffffff;
   color: #000000;
-  border: 2px solid;
   border-color: #000000;
 }
 
@@ -209,5 +208,17 @@ a {
   }
   .list-container, .logoMasTitulo {
     margin: inherit;
+  }
+  .cardlogin.division{
+    width: 100vw;
+  }
+  .recuperar{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 408px) {
+  .wrapper, .cardlogin.division, .list-container, .container, .btn-acceder, input{
+    width: 100vw;
   }
 }
