@@ -1,20 +1,21 @@
-:root{
+:root {
   --color-theme: rgb(145, 145, 145);
 }
 
-.img{
+.img {
   float: left;
 }
 
 .cardlogin {
-  transform: translateY(20%);  
+  transform: translateY(20%);
 }
 
-.general{
+.general {
   overflow: hidden;
-  background-color: #EFF3FC;
+  background-color: #eff3fc;
+  overflow-y: auto;
 }
-.list-container{
+.list-container {
   margin: 0px auto;
   width: 400px;
   border: 2px solid;
@@ -23,59 +24,58 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-.list-container .lists{display: flex;}
-.list-container .lists li{
+.list-container .lists {
+  display: flex;
+}
+.list-container .lists li {
   list-style: none;
 }
-.list-container .lists li a{
-    width: 200;
-    text-decoration: none;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding:4px;
-    border-radius: 10px;
-    transition: 0.3s;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.list-container .lists li a {
+  width: 200;
+  text-decoration: none;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 4px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.list-container .lists li{
-    text-align: center;
-    color: var(--color-theme);
-    width: 47.5%;
-    margin-left: 1%;
-    border-radius: 10px;
+.list-container .lists li {
+  text-align: center;
+  color: var(--color-theme);
+  width: 47.5%;
+  margin-left: 1%;
+  border-radius: 10px;
 }
 
-.list-container .lists li a:hover{
-    background: linear-gradient(90deg, #007E40 0%, #00B855 100%);
-    border-radius: 8px;
-    color: #ffffff;
+.list-container .lists li a:hover {
+  background: linear-gradient(90deg, #007e40 0%, #00b855 100%);
+  border-radius: 8px;
+  color: #ffffff;
 }
 
-.list-container .lists li:hover{
+.list-container .lists li:hover {
   background: var(--color-theme);
   color: #ffffff;
 }
 
-
-.formulario{
-
+.formulario {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  
 }
 
-label{
+label {
   color: var(--color-theme);
 }
 
-input{
+input {
   height: 30px;
   width: 400px;
   border: 2px solid;
@@ -84,31 +84,31 @@ input{
   margin-bottom: 1rem;
 }
 
-.recuperar{
+.recuperar {
   display: flex;
   justify-content: right;
   margin-bottom: 1rem;
 }
-a{
+a {
   text-decoration: none;
   color: var(--color-theme);
 }
-.division{
+.division {
   width: 50%;
   float: left;
 }
-.img.division img{
+.img.division img {
   width: 100%;
-  flex:1;
+  flex: 1;
 }
 
-.img.division{
+.img.division {
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
 }
 
-.cardlogin.division .lists{
+.cardlogin.division .lists {
   margin-right: 0px;
   margin-left: 0px;
   padding-left: 0px;
@@ -118,87 +118,96 @@ a{
   margin-bottom: 1%;
 }
 
-.cardlogin.division a{
+.cardlogin.division a {
   display: block;
 }
-.iconosCuentas{
-  color: #007E40;
+.iconosCuentas {
+  color: #007e40;
 }
 
-.iconosCuentas:hover{
+.iconosCuentas:hover {
   color: #ffffff;
 }
 
-.list-container .lists li a:hover .iconosCuentas,.list-container .lists li a:hover .botonCardLogin{
+.list-container .lists li a:hover .iconosCuentas,
+.list-container .lists li a:hover .botonCardLogin {
   color: #ffffff;
 }
-.list-container .lists li a:hover{
-border-radius: 8px;
+.list-container .lists li a:hover {
+  border-radius: 8px;
 }
 
-.cardlogin.division .list-container, #CardNumber, #Pin, .btn-acceder{
-height: 48.67px;
+.cardlogin.division .list-container,
+#CardNumber,
+#Pin,
+.btn-acceder {
+  height: 48.67px;
 }
-.btn-acceder{
-padding-top: 17.33px;
-padding-bottom: 31.34px;
-background: linear-gradient(90deg, #007E40 0%, #00B855 100%);
-border-radius: 8px;
-height: 30px;
-width: 400px;
-color: #FFFFFF;
-border-width: 0px;
-}
-
-
-
-
-.btn-acceder:hover{
-background: #ffffff;
-color: #000000;
-border: 2px solid;
-border-color: #000000;
+.btn-acceder {
+  padding-top: 17.33px;
+  padding-bottom: 31.34px;
+  background: linear-gradient(90deg, #007e40 0%, #00b855 100%);
+  border-radius: 8px;
+  height: 30px;
+  width: 400px;
+  color: #ffffff;
+  border-width: 0px;
 }
 
-.logoMasTitulo{
+.btn-acceder:hover {
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid;
+  border-color: #000000;
+}
+
+.logoMasTitulo {
   width: 400px;
   margin: 0px auto;
   margin-bottom: 70px;
 }
 
-.logoMasTitulo img{
+.logoMasTitulo img {
   float: left;
 }
 
-.titulo{
+.titulo {
   width: 361px;
   margin-left: 50px;
 }
 
-.sombra{
-width: 393px;
-height: 23px;
-background: linear-gradient(90deg, rgba(0, 126, 64, 0.65) 0%, rgba(0, 184, 85, 0.65) 100%);
-filter: blur(9px);
-border-radius: 8px;
-position:relative;
-z-index: -1;
-top: -15px;
-left: 5px;
+.sombra {
+  width: 393px;
+  height: 23px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 126, 64, 0.65) 0%,
+    rgba(0, 184, 85, 0.65) 100%
+  );
+  filter: blur(9px);
+  border-radius: 8px;
+  position: relative;
+  z-index: -1;
+  top: -15px;
+  left: 5px;
 }
 
-.btn-acceder:hover + .sombra{
-  background: #EFF3FC;
-  }
+.btn-acceder:hover + .sombra {
+  background: #eff3fc;
+}
 
-  @media only screen and (max-width: 880px) {
-    .img.division {
-      display: none;
-    }
-    .formulario{
-    display: inherit;
-    }
-    .list-container{
-      margin: inherit;
-    }
+@media only screen and (max-width: 880px) {
+  .container{
+    width: 408px;
+    margin: auto;
   }
+  .img.division {
+    display: none;
+  }
+  .formulario {
+    display: inherit;
+  }
+  .list-container, .logoMasTitulo {
+    margin: inherit;
+  }
+}
