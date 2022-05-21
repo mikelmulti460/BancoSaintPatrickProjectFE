@@ -2,8 +2,10 @@ import './login.css';
 import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from './AuthProvider';
 import frame from '../img/frame1.png';
+import React from 'react';
 import { ReactComponent as Account } from '../img/account.svg';
 import { ReactComponent as Account_1 } from '../img/account_1.svg';
+import Logo from '../img/LogoSanPatrick.png';
 import axios from './axios';
 
 const LOGIN_URL='api/v1/auth';
@@ -67,29 +69,30 @@ const Login =() => {
         <img src={frame}/>
       </div>
       <div className="cardlogin division">
+        <div className="logoMasTitulo">
+          <img src={Logo}/>
+          <h1 className='titulo'>Banco San Patrick</h1>
+        </div>
         <div className="list-container">
           <ul className="lists">
             <li>
-              <a href="#" className="tipo-ingr">
-              
-                  <Account /><span className="botonCardLogin">Personal</span>
-               
+              <a href="#" className="tipo-ingr">              
+              <Account className="iconosCuentas" />
+                  <span className="botonCardLogin">Personal</span>               
               </a>
             </li>
             <li>
-              <a href="#" className="tipo-ingr">
-                
-                  <Account_1 /><span className="botonCardLogin">Empresarial</span>
-                
+              <a href="#" className="tipo-ingr">                              
+                  <Account_1 className="iconosCuentas"/><span className="botonCardLogin">Empresarial</span>                
               </a>
             </li>
           </ul>
         </div>
         <div className="formulario" onSubmit={handleSubmit}>
         <form>
-            <div><label>Numero de tarjeta</label></div>
+            <div><label>Nombre de usuario</label></div>
             <input type="text" id="CardNumber" ref={userRef} autoComplete="off" onChange={(e) => setCard(e.target.value)} value={CardNumber} />
-            <div><label>Password</label></div>
+            <div><label>Contraseña</label></div>
             <input type="password" id="Pin" onChange={(e) => setPin(e.target.value)} value={Pin} />
             <div className="recuperar"><a href="#">¿Olvidaste tu contraseña?</a></div>
             <button className="btn-acceder">Acceder</button>

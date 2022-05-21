@@ -7,9 +7,13 @@
 }
 
 .cardlogin {
-  transform: translateY(50%);
+  transform: translateY(20%);  
 }
 
+.general{
+  overflow: hidden;
+  background-color: #EFF3FC;
+}
 .list-container{
   margin: 0px auto;
   width: 400px;
@@ -19,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #FFFFFF;
 }
 .list-container .lists{display: flex;}
 .list-container .lists li{
@@ -40,7 +45,6 @@
 
 .list-container .lists li{
     text-align: center;
-    border: 2px solid;
     color: var(--color-theme);
     width: 47.5%;
     margin-left: 1%;
@@ -48,12 +52,14 @@
 }
 
 .list-container .lists li a:hover{
-    background: var(--color-theme);
-    color: rgb(0, 0, 0);
+    background: linear-gradient(90deg, #007E40 0%, #00B855 100%);
+    border-radius: 8px;
+    color: #ffffff;
 }
 
 .list-container .lists li:hover{
   background: var(--color-theme);
+  color: #ffffff;
 }
 
 
@@ -76,16 +82,6 @@ input{
   border-radius: 10px;
   color: var(--color-theme);
   margin-bottom: 1rem;
-}
-
-.btn-acceder{
-  height: 30px;
-  width: 400px;
-  border: 2px solid;
-  border-radius: 10px;
-  background-color: var(--color-theme);
-  color:aliceblue;
-  height: 40px;
 }
 
 .recuperar{
@@ -125,15 +121,55 @@ a{
 .cardlogin.division a{
   display: block;
 }
-
-.list-container .lists li a:hover{
-  border-radius: 8px;
+.iconosCuentas{
+  color: #007E40;
 }
+
+.iconosCuentas:hover{
+  color: #ffffff;
+}
+
+.list-container .lists li a:hover .iconosCuentas,.list-container .lists li a:hover .botonCardLogin{
+  color: #ffffff;
+}
+.list-container .lists li a:hover{
+border-radius: 8px;
+}
+
 .cardlogin.division .list-container, #CardNumber, #Pin, .btn-acceder{
 height: 48.67px;
 }
 .btn-acceder{
 padding-top: 17.33px;
 padding-bottom: 31.34px;
+background: linear-gradient(90deg, #007E40 0%, #00B855 100%);
+border-radius: 8px;
+height: 30px;
+width: 400px;
+color: #FFFFFF;
+border-width: 0px;
+}
+
+
+
+
+.btn-acceder:hover{
+background: #ffffff;
+color: #000000;
+}
+
+.logoMasTitulo{
+  width: 400px;
+  margin: 0px auto;
+  margin-bottom: 70px;
+}
+
+.logoMasTitulo img{
+  float: left;
+}
+
+.titulo{
+  width: 361px;
+  margin-left: 50px;
 }
 
