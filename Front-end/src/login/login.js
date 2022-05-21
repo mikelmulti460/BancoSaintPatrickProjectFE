@@ -96,6 +96,7 @@ const Login =() => {
             <input type="password" id="Pin" onChange={(e) => setPin(e.target.value)} value={Pin} />
             <div className="recuperar"><a href="#">¿Olvidaste tu contraseña?</a></div>
             <button className="btn-acceder">Acceder</button>
+            <div className='sombra'></div>
         </form>
       </div>
     </div>

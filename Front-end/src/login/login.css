@@ -156,6 +156,8 @@ border-width: 0px;
 .btn-acceder:hover{
 background: #ffffff;
 color: #000000;
+border: 2px solid;
+border-color: #000000;
 }
 
 .logoMasTitulo{
@@ -173,3 +175,18 @@ color: #000000;
   margin-left: 50px;
 }
 
+.sombra{
+width: 393px;
+height: 23px;
+background: linear-gradient(90deg, rgba(0, 126, 64, 0.65) 0%, rgba(0, 184, 85, 0.65) 100%);
+filter: blur(9px);
+border-radius: 8px;
+position:relative;
+z-index: -1;
+top: -15px;
+left: 5px;
+}
+
+.btn-acceder:hover + .sombra{
+  background: #EFF3FC;
+  }
