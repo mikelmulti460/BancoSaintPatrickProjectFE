@@ -8,8 +8,11 @@ import { ReactComponent as Account_1 } from "../img/account_1.svg";
 import Logo from "../img/LogoSanPatrick.png";
 import axios from "./axios";
 
+  function cuentaSeleccionada(e){
+    e.preventDefault();
+  }
 
-const LOGIN_URL = "api/v1/auth";
+  const LOGIN_URL = "api/v1/auth";
 
 const Login = () => {
   const { setAuth } = useContext(AuthContext);
@@ -20,6 +23,8 @@ const Login = () => {
   const [Pin, setPin] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [sucess, setSucess] = useState("");
+
+
 
   useEffect(() => {
     userRef.current.focus();
@@ -90,13 +95,13 @@ const Login = () => {
             <div className="list-container">
               <ul className="lists">
                 <li>
-                  <a href="#" className="tipo-ingr">
+                  <a href="#" className="tipo-ingr" onClick={cuentaSeleccionada}>
                     <Account className="iconosCuentas" />
                     <span className="botonCardLogin">Personal</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="tipo-ingr">
+                  <a href="#" className="tipo-ingr" onClick={cuentaSeleccionada}>
                     <Account_1 className="iconosCuentas" />
                     <span className="botonCardLogin">Empresarial</span>
                   </a>

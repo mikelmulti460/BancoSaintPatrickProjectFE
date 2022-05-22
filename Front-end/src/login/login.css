@@ -55,13 +55,13 @@
   border-radius: 10px;
 }
 
-.list-container .lists li a:hover {
+.list-container .lists li a:hover, .list-container .lists li a:focus{
   background: linear-gradient(90deg, #007e40 0%, #00b855 100%);
   border-radius: 8px;
   color: #ffffff;
 }
 
-.list-container .lists li:hover {
+.list-container .lists li:hover, .list-container .lists li:focus{
   background: var(--color-theme);
   color: #ffffff;
 }
@@ -127,15 +127,17 @@ a {
   color: #007e40;
 }
 
-.iconosCuentas:hover {
+.iconosCuentas:hover, .iconosCuentas:focus{
   color: #ffffff;
 }
 
 .list-container .lists li a:hover .iconosCuentas,
-.list-container .lists li a:hover .botonCardLogin {
+.list-container .lists li a:hover .botonCardLogin,
+.list-container .lists li a:focus .iconosCuentas,
+.list-container .lists li a:focus .botonCardLogin{
   color: #ffffff;
 }
-.list-container .lists li a:hover {
+.list-container .lists li a:hover, .list-container .lists li a:focus{
   border-radius: 8px;
 }
 
