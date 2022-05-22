@@ -25,6 +25,7 @@
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  box-shadow: 2px 4px 4px rgba(146, 146, 146, 0.25);
 }
 .list-container .lists {
   display: flex;
@@ -82,6 +83,7 @@ input {
   border-radius: 10px;
   color: var(--color-theme);
   margin-bottom: 1rem;
+  box-shadow: 2px 4px 4px rgba(146, 146, 146, 0.25);
 }
 
 .recuperar {
@@ -221,4 +223,34 @@ a {
   .wrapper, .cardlogin.division, .list-container, .container, .btn-acceder, input{
     width: 100vw;
   }
+}
+
+@media only screen and (max-width: 361px) {
+  .primeraLinea::after{
+    content: "\a";
+    white-space: pre;
+}
+.logoMasTitulo{
+  width: 100vw;
+}
+.logoMasTitulo img{
+  float: inherit;
+  display: block;
+  margin: auto;
+}
+.primeraLinea{
+  width: 92.02px;
+  margin: 0 auto;
+  display: block;
+}
+.segundaLinea{
+  width: 167.08px;
+  margin: 0 auto;
+    display: block;
+}
+.titulo{
+  width: 100vw;
+  margin-left: 0px;
+}
+
 }

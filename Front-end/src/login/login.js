@@ -85,7 +85,7 @@ const Login = () => {
           <div className="cardlogin division">
             <div className="logoMasTitulo">
               <img src={Logo} />
-              <h1 className="titulo">Banco San Patrick</h1>
+              <h1 className="titulo"><span className="primeraLinea">Banco</span><span className="segundaLinea"> San Patrick</span></h1>
             </div>
             <div className="list-container">
               <ul className="lists">
