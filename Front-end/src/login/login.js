@@ -1,18 +1,22 @@
 import "./login.css";
 import { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "./AuthProvider";
-import frame from "../img/frame1.png";
+import Facebook from "../img/Facebook.png";
 import React from "react";
 import { ReactComponent as Account } from "../img/account.svg";
 import { ReactComponent as Account_1 } from "../img/account_1.svg";
 import Logo from "../img/LogoSanPatrick.png";
+import Logo2 from "../img/logo2.png";
+import Group102 from "../img/Group102.png";
 import axios from "./axios";
+import Linkedin from "../img/Linkedin.png";
+import Instagram from "../img/Instagram.png";
 
-  function cuentaSeleccionada(e){
-    e.preventDefault();
-  }
+function cuentaSeleccionada(e) {
+  e.preventDefault();
+}
 
-  const LOGIN_URL = "api/v1/auth";
+const LOGIN_URL = "api/v1/auth";
 
 const Login = () => {
   const { setAuth } = useContext(AuthContext);
@@ -23,8 +27,6 @@ const Login = () => {
   const [Pin, setPin] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [sucess, setSucess] = useState("");
-
-
 
   useEffect(() => {
     userRef.current.focus();
@@ -82,66 +84,102 @@ const Login = () => {
         </section>
       ) : (
         <div className="general">
-          <div className="container">
           <div className="wrapper">
-          <div className="img division">
-            <img src={frame} />
-          </div>
-          <div className="cardlogin division">
-            <div className="logoMasTitulo">
-              <img src={Logo} />
-              <h1 className="titulo"><span className="primeraLinea">Banco</span><span className="segundaLinea"> San Patrick</span></h1>
-            </div>
-            <div className="list-container">
-              <ul className="lists">
-                <li>
-                  <a href="#" className="tipo-ingr" onClick={cuentaSeleccionada}>
-                    <Account className="iconosCuentas" />
-                    <span className="botonCardLogin">Personal</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="tipo-ingr" onClick={cuentaSeleccionada}>
-                    <Account_1 className="iconosCuentas" />
-                    <span className="botonCardLogin">Empresarial</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="formulario" onSubmit={handleSubmit}>
-              <form>
+            <div className="containerIzquierdo">
+              <div className="img division">
+                <div className="logoIzquierda">
+                  <img src={Logo2} />
+                </div>
                 <div>
-                  <label >Nombre de usuario</label >
+                  <p className="slogan">
+                    BANCO SAN PATRICK, SIEMPRE A TU LADO COMO
+                  </p>
                 </div>
-                <input 
-                  type="text"
-                  id="CardNumber"
-                  ref={userRef}
-                  autoComplete="off"
-                  onChange={(e) => setCard(e.target.value)}
-                  value={CardNumber}
-                />
-                <div>
-                  <label >Contraseña</label>
+                <div className="sloganMasGrupo">
+                  <div className="slogan2">
+                    <p>ALGUIEN EN</p>
+                  </div>
+                  <div className="group102">
+                    <img src={Group102} />
+                  </div>
                 </div>
-                <input 
-                  type="password"
-                  id="Pin"
-                  onChange={(e) => setPin(e.target.value)}
-                  value={Pin}
-                />
-                <div className="recuperar">
-                  <a href="#">¿Olvidaste tu contraseña?</a>
+                <div className="slogan3">
+                  <p>QUIEN CONFIAR</p>
                 </div>
-                <button className="btn-acceder">Acceder</button>
-                <div className="sombra"></div>
-              </form>
-              <div>
+                <div className="redesSociales">
+                  <a className="facebook" href="#"><img src={Facebook} /></a>
+                  <a className="linkedin" href="#"><img src={Linkedin} /></a>
+                  <a className="instagram" href="#"><img src={Instagram} /></a>
+                </div>
               </div>
             </div>
+            <div className="containerDerecho">
+              <div className="cardlogin division">
+                <div className="logoMasTitulo">
+                  <img src={Logo} />
+                  <h1 className="titulo">
+                    <span className="primeraLinea">Banco</span>
+                    <span className="segundaLinea"> San Patrick</span>
+                  </h1>
+                </div>
+                <div className="list-container">
+                  <ul className="lists">
+                    <li>
+                      <a
+                        href="#"
+                        className="tipo-ingr"
+                        onClick={cuentaSeleccionada}
+                      >
+                        <Account className="iconosCuentas" />
+                        <span className="botonCardLogin">Personal</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="tipo-ingr"
+                        onClick={cuentaSeleccionada}
+                      >
+                        <Account_1 className="iconosCuentas" />
+                        <span className="botonCardLogin">Empresarial</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="formulario" onSubmit={handleSubmit}>
+                  <form>
+                    <div>
+                      <label>Nombre de usuario</label>
+                    </div>
+                    <input
+                      type="text"
+                      id="CardNumber"
+                      ref={userRef}
+                      autoComplete="off"
+                      onChange={(e) => setCard(e.target.value)}
+                      value={CardNumber}
+                    />
+                    <div>
+                      <label>Contraseña</label>
+                    </div>
+                    <input
+                      type="password"
+                      id="Pin"
+                      onChange={(e) => setPin(e.target.value)}
+                      value={Pin}
+                    />
+                    <div className="recuperar">
+                      <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <button className="btn-acceder">Acceder</button>
+                    <div className="sombra"></div>
+                  </form>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div className="clearDiv"></div>
           </div>
-          </div>
-        </div>
         </div>
       )}
     </>
