@@ -107,9 +107,9 @@ const Login = () => {
                   <p>QUIEN CONFIAR</p>
                 </div>
                 <div className="redesSociales">
-                  <img className="facebook" src={Facebook} /> 
-                  <img className="linkedin" src={Linkedin} />
-                  <img className="instagram" src={Instagram} /> 
+                  <a className="facebook" href="#"><img src={Facebook} /></a>
+                  <a className="linkedin" href="#"><img src={Linkedin} /></a>
+                  <a className="instagram" href="#"><img src={Instagram} /></a>
                 </div>
               </div>
             </div>
